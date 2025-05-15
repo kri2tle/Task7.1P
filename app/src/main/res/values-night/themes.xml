@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.LostFoundApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/mint_light</item>
+        <item name="colorPrimaryVariant">@color/mint_dark</item>
+        <item name="colorOnPrimary">@color/green_dark</item>
+        
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/green_medium</item>
+        <item name="colorSecondaryVariant">@color/green_light</item>
+        <item name="colorOnSecondary">@color/white</item>
+        
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/green_dark</item>
+        
+        <!-- Background colors -->
+        <item name="android:colorBackground">@color/green_dark</item>
+        <item name="colorSurface">@color/green_medium</item>
+        <item name="colorOnSurface">@color/mint_light</item>
+        
+        <!-- Text colors -->
+        <item name="android:textColorPrimary">@color/mint_light</item>
+        <item name="android:textColorSecondary">@color/mint_dark</item>
+    </style>
+</resources>

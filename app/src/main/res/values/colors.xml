@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- App Theme Colors -->
+    <color name="mint_light">#CFF1DF</color>
+    <color name="green_medium">#507160</color>
+    <color name="green_dark">#101713</color>
+    
+    <!-- Additional derived colors -->
+    <color name="mint_dark">#AFDCC3</color>
+    <color name="green_light">#6A8D7C</color>
+</resources>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mint_light"
+    tools:context=".ItemDetailActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/text_view_detail_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Item Details"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold"
+            android:textColor="@color/green_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_view_detail_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="LOST"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="italic"
+            android:textColor="@color/green_medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_detail_title" />
+
+        <TextView
+            android:id="@+id/text_view_name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Name:"
+            android:textStyle="bold"
+            android:textColor="@color/green_dark"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_detail_type" />
+
+        <TextView
+            android:id="@+id/text_view_detail_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="Item Name"
+            android:textColor="@color/green_medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_view_name_label"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_detail_type" />
+
+        <TextView
+            android:id="@+id/text_view_description_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Description:"
+            android:textStyle="bold"
+            android:textColor="@color/green_dark"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_name_label" />
+
+        <TextView
+            android:id="@+id/text_view_detail_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Item Description"
+            android:textColor="@color/green_medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_description_label" />
+
+        <TextView
+            android:id="@+id/text_view_location_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Location:"
+            android:textStyle="bold"
+            android:textColor="@color/green_dark"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_detail_description" />
+
+        <TextView
+            android:id="@+id/text_view_detail_location"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="Location"
+            android:textColor="@color/green_medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_view_location_label"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_detail_description" />
+
+        <TextView
+            android:id="@+id/text_view_date_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Date:"
+            android:textStyle="bold"
+            android:textColor="@color/green_dark"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_location_label" />
+
+        <TextView
+            android:id="@+id/text_view_detail_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="Date"
+            android:textColor="@color/green_medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_view_date_label"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_detail_location" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="24dp"
+            android:background="@color/green_medium"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_detail_date" />
+
+        <TextView
+            android:id="@+id/text_view_contact_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Contact Information"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            android:textColor="@color/green_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+        <TextView
+            android:id="@+id/text_view_phone_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Phone:"
+            android:textStyle="bold"
+            android:textColor="@color/green_dark"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_contact_title" />
+
+        <TextView
+            android:id="@+id/text_view_detail_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="Phone Number"
+            android:textColor="@color/green_medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_view_phone_label"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_contact_title" />
+
+        <TextView
+            android:id="@+id/text_view_email_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Email:"
+            android:textStyle="bold"
+            android:textColor="@color/green_dark"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_phone_label" />
+
+        <TextView
+            android:id="@+id/text_view_detail_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="Email Address"
+            android:textColor="@color/green_medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_view_email_label"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_detail_phone" />
+
+        <Button
+            android:id="@+id/button_edit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="4dp"
+            android:text="Edit"
+            android:backgroundTint="@color/green_medium"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@+id/button_save"
+            app:layout_constraintHorizontal_bias="0.33"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_detail_email" />
+
+        <Button
+            android:id="@+id/button_save"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="4dp"
+            android:text="Save"
+            android:backgroundTint="@color/green_medium"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@+id/button_delete"
+            app:layout_constraintHorizontal_bias="0.33"
+            app:layout_constraintStart_toEndOf="@+id/button_edit"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_detail_email" />
+
+        <Button
+            android:id="@+id/button_delete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="32dp"
+            android:text="Delete"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.33"
+            app:layout_constraintStart_toEndOf="@+id/button_save"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_detail_email" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView> 
